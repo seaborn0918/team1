@@ -27,26 +27,7 @@
   </script>
 </head>
 <body>
-<header>
-  <nav class="navbar bg-light p-3">
-    <div class="container d-flex">
-      <a class="navbar-brand" href="/main">장독대</a>
-      <div class="navbar-nav flex-row">
-        <a href="#" class="nav-link me-3">나만의 추천작</a>
-        <a href="#" class="nav-link me-3">자유게시판</a>
-        <a href="#" class="nav-link me-3">개봉작 수다</a>
-        <a href="#" class="nav-link me-3">할인 정보</a>
-        <a href="#" class="nav-link me-3">카테고리별</a>
-      </div>
-      <form class="d-flex ms-auto me-2">
-        <input class="form-control me-2" type="search" placeholder="Search">
-        <button class="btn btn-light" type="submit">search</button>
-      </form>
-      <button class="btn btn-dark me-2" type="button">로그인</button>
-      <button class="btn btn-secondary me-2" type="button">회원가입</button>
-    </div>
-  </nav>
-</header>
+<header th:replace="~{layout/header :: header-basic}"></header>
 <main class="container my-4">
   <div class="daily-box-office my-4">
     <h1 class="fs-5 fw-bold">일일 박스 오피스(New!)</h1>
